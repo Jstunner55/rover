@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.22)  7 DEC 2025 22:12
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.22)  11 DEC 2025 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,21 +810,52 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 \openout4 = `project_reqs.toc'.
 
 
-Overfull \hbox (0.36655pt too wide) in paragraph at lines 44--45
-\TU/phv/b/n/10 This document outlines the functional, performance, and
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 47.
+
+
+Overfull \hbox (0.84457pt too wide) in paragraph at lines 52--55
+\TU/phv/b/n/10 therefore withstand precipitation, temperature variation,
  []
 
 
-Overfull \hbox (3.15457pt too wide) in paragraph at lines 51--52
-\TU/phv/b/n/10 The system shall process input data, generate correspond-
+Overfull \hbox (10.23256pt too wide) in paragraph at lines 52--55
+\TU/phv/b/n/10 and high winds. It will traverse multiple outdoor surfaces—
+ []
+
+
+Overfull \hbox (3.43057pt too wide) in paragraph at lines 52--55
+\TU/phv/b/n/10 including grass, dirt, pavement, ice, and snow—and main-
+ []
+
+[1
+
+
+]
+Overfull \hbox (0.94255pt too wide) in paragraph at lines 79--80
+[]\TU/phv/b/n/10 No wiring harnesses may be visible externally when
+ []
+
+
+Overfull \hbox (23.46237pt too wide) in paragraph at lines 86--87
+[]\TU/phv/b/n/10 The complete assembly must fit within a 2 ft $\OMS/ztmcm/m/n/1
+0 ^^B$ \TU/phv/b/n/10 2 ft $\OMS/ztmcm/m/n/10 ^^B$ \TU/phv/b/n/10 2 ft
+ []
+
+
+Overfull \hbox (5.18256pt too wide) in paragraph at lines 97--98
+[]\TU/phv/b/n/10 The rover shall maintain stable traction across grass,
+ []
+
+
+Overfull \hbox (42.73256pt too wide) in paragraph at lines 105--106
+\TU/phv/b/n/10 as temporary sensor errors or communication interruptions—
  []
 
 
 AED: lastpage setting LastPage
-[1
-
-
-] (project_reqs.aux)
+[2] (project_reqs.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -834,15 +865,15 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `project_reqs.out' has not changed.
-(rerunfilecheck)             Checksum: C0B05AEB664B2D3D305C68DFB5ED4001;1160.
+(rerunfilecheck)             Checksum: 211717782CDB81D2C2688DE44D0F26CC;2147.
  ) 
 Here is how much of TeX's memory you used:
- 16653 strings out of 409617
- 271295 string characters out of 5774215
- 1941191 words of memory out of 5000000
- 38528 multiletter control sequences out of 15000+600000
+ 16680 strings out of 409617
+ 271930 string characters out of 5774215
+ 1947191 words of memory out of 5000000
+ 38555 multiletter control sequences out of 15000+600000
  583421 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 85i,9n,93p,1011b,363s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,12n,93p,1011b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on project_reqs.pdf (1 page).
+Output written on project_reqs.pdf (2 pages).

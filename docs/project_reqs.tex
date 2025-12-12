@@ -20,7 +20,7 @@
 	pdftitle={Title},
 	pdfauthor={Author},
 }
-\PaperTitle{Project Requirements - HomNav} % Article title
+\PaperTitle{Project Requirements - DirtNav} % Article title
 \Authors{Jose Reyes\textsuperscript{1}} % Authors
 \affiliation{\textsuperscript{1}\textit{Founder, ReyMex, Bismarck, ND, USA}} % Author affiliation
 \affiliation{\textsuperscript{2}\textit{Electrical Staff Engineer, Kestrel Engineering Group, Bismarck, ND, USA}} % Author affiliation
@@ -36,26 +36,83 @@
 \tableofcontents % Output the contents section
 \thispagestyle{empty} % Removes page numbering from the first page
 
-\section{Description}
+
+\section{Project Description}
 
 \subsection{Purpose}
-The purpose of this system is to provide a reliable and efficient solution for managing core operational tasks while maintaining ease of use for end users.
+The purpose of this rover is to serve as a practical outdoor utility platform for residential lawncare. 
+Its primary role is to collect elevation and soil moisture data across a property at a significantly lower cost than commercially available lawncare robots.
+
 \subsection{Scope}
-This document outlines the functional, performance, and reliability requirements necessary to support the system's intended operation across all deployment environments.
-\subsection{Overview}
-The system consists of modular components responsible for data processing, user interaction, and system monitoring, each designed to operate cohesively within the defined constraints.
+The scope of this document is limited to the \textit{pre-control} aspects of rover development. 
+This includes the proposed mechanical design, electrical architecture, wiring and harness routing strategy, and structural layout. 
+A functional prototype (“mule build”) and all rover control software are explicitly out of scope for this phase.
+
+\subsection{System Overview}
+The rover is intended to operate year-round and must therefore withstand precipitation, temperature variation, and high winds. 
+It will traverse multiple outdoor surfaces—including grass, dirt, pavement, ice, and snow—and maintain traction on varying inclines. 
+The design philosophy prioritizes durability, serviceability, and functional performance, while maintaining a clean and professional appearance.
 
 \section{Specific Requirements}
 
-\subsection{Functionality}
-The system shall process input data, generate corresponding outputs, and provide essential user feedback through an interactive interface.
-\subsection{Performance}
-The system shall operate with a maximum response time of 200 ms under normal load and maintain performance across typical usage scenarios.
-\subsection{Reliability}
-The system shall maintain an uptime of at least 99\% and recover gracefully from unexpected faults or interruptions.
-\subsection{Design Constraints}
-The design shall adhere to specified hardware limitations, comply with applicable standards, and remain compatible with existing interfaces.
-\subsection{States and Modes}
-The system shall operate in three primary modes: initialization, normal operation, and error recovery, transitioning between states based on defined event triggers.
+\subsection{Mechanical Requirements}
+\begin{itemize}
+    \item Must climb inclines up to $30^\circ$.
+    \item Must operate reliably in rain, snow, and high-wind conditions.
+    \item Must traverse snow, ice, dirt, pavement, and grass.
+    \item Must achieve a minimum straight-line speed of 13~mph.
+\end{itemize}
 
+\subsection{Electrical Requirements}
+\begin{itemize}
+    \item Must provide at least 60 minutes of continuous runtime per charge.
+    \item Must operate on a 12~V electrical bus.
+    \item Must be controllable remotely through internet-based communication protocols.
+    \item Must include actuated soil-moisture sensing capability.
+    \item Must include elevation and terrain-profiling sensing capability.
+\end{itemize}
+
+\subsection{Harness Routing Requirements}
+\begin{itemize}
+    \item No wires may be free-hanging within the chassis.
+    \item No twisted, nested, or uncontrolled wire bundles are permitted.
+    \item No wiring harnesses may be visible externally when the rover is fully assembled.
+\end{itemize}
+
+\subsection{Structural Requirements}
+\begin{itemize}
+    \item All electronic enclosures must be fully waterproof.
+    \item The rover must survive a 6~ft drop onto any face without structural or functional damage.
+    \item The complete assembly must fit within a 2~ft~$\times$~2~ft~$\times$~2~ft volume.
+\end{itemize}
+
+\subsection{Functionality}
+The rover shall autonomously collect and store environmental data, relay information to a remote operator, and navigate outdoor terrain using onboard sensors and a remote communication link. Additional functional requirements will be developed in later phases as control algorithms and operational behaviors are defined.
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance Requirements}
+\begin{itemize}
+    \item The rover shall respond to sensor inputs and operator commands within approximately 200~ms during normal operation.
+    \item The rover shall maintain stable traction across grass, dirt, pavement, snow, and ice under typical outdoor conditions.
+    \item The rover shall be capable of reaching a minimum straight-line speed of 13~mph on flat pavement.
+    \item The rover shall continuously collect and log moisture, elevation, and general telemetry data while in motion.
+\end{itemize}
+
+\subsection{Reliability Requirements}
+\begin{itemize}
+    \item The rover shall operate reliably for a full 60-minute session without unexpected shutdowns or major faults.
+    \item The rover shall recover from common issues—such as temporary sensor errors or communication interruptions—without requiring a full system reboot.
+    \item The rover shall function in rain, light snow, and winds up to 30~mph without loss of essential capability.
+    \item The rover shall tolerate minor impacts with obstacles such as rocks, branches, or edges of pavement without sustaining damage that affects operation.
+\end{itemize}
+
+\subsection{Design Constraints}
+\begin{itemize}
+    \item The rover shall operate on a 12~V electrical system, and all components shall remain compatible with this power architecture.
+    \item All electronics shall be enclosed in waterproof housings to ensure safe operation in outdoor environments.
+    \item The complete mechanical and electrical assembly shall fit within a 2~ft $\times$ 2~ft $\times$ 2~ft volume.
+    \item Wireless communication shall comply with standard FCC regulations for consumer-grade devices.
+    \item All wiring shall be routed internally, with no exposed or loosely suspended harnesses on the exterior of the rover.
+\end{itemize}
 \end{document}
